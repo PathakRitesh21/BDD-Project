@@ -30,13 +30,20 @@ public class LoginGtplBank_Steps {
 
 
     
-    @When("I enter credentials")
+    /*@When("I enter credentials")
     public void i_enter_credentials(DataTable dataTable) {
     	String user = dataTable.cell(1, 0);
         String pass = dataTable.cell(1, 1);
 
         gtplHomePage_Actions.enterUserID(user);
         gtplHomePage_Actions.enterPassword(pass);
+        gtplHomePage_Actions.clickLogin();
+    }*/
+    
+    @When("I enter {string} and {string}")
+    public void i_enter_and(String string, String string2) {
+    	gtplHomePage_Actions.enterUserID(string);
+        gtplHomePage_Actions.enterPassword(string2);
         gtplHomePage_Actions.clickLogin();
     }
 
