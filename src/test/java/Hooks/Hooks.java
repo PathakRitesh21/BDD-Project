@@ -29,6 +29,8 @@ public class Hooks {
     }
 
     public static WebDriver getDriver() {
+    	System.out.println("✅ Setup Completed Successfully" + driver);
         return driver;
+        
     }
 }
