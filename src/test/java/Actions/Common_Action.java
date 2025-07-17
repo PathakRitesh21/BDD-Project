@@ -14,5 +14,13 @@ public class Common_Action {
 	 public void navigateToUrl(String str) {
 		 driver.get(str);
 	 }
+	 
+	 public String getCurrentUrl() {
+		 return driver.getCurrentUrl();
+	 }
+	 
+	 public String getTitle() {
+		 return driver.getTitle();
+	 }
 
 }

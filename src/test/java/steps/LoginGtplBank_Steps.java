@@ -9,10 +9,11 @@ import io.cucumber.datatable.DataTable;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
+import junit.framework.Assert;
 
 public class LoginGtplBank_Steps {
 
-    
+    String url = "https://demo.guru99.com/V1/index.php";
     GtplHomePage_Actions gtplHomePage_Actions;
     Common_Action common_Actions;
     
@@ -24,7 +25,7 @@ public class LoginGtplBank_Steps {
 
     @Given("I am on GTPL bank Login page")
     public void i_am_on_gtpl_bank_login_page() throws Exception {
-    	common_Actions.navigateToUrl("https://demo.guru99.com/V1/index.php");
+    	common_Actions.navigateToUrl(url);
     }
 
 
@@ -42,6 +43,7 @@ public class LoginGtplBank_Steps {
 
     @Then("I Logged In To GTPL Bank Page")
     public void i_logged_in_to_gtpl_bank_page() {
+    	Assert.assertEquals(common_Actions.getTitle().trim(), "GTPL Bank Manager HomePage");
         System.out.println("✅ Login Successful");
     }
 }
