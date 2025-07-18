@@ -1,6 +1,9 @@
 package TestRunner;
 
+import org.junit.AfterClass;
 import org.junit.runner.RunWith;
+
+import Actions.ReportGenerator;
 import io.cucumber.junit.Cucumber;
 import io.cucumber.junit.CucumberOptions;
 
@@ -17,4 +20,8 @@ import io.cucumber.junit.CucumberOptions;
     dryRun = false                             // ✅ Set to true if you want to check for missing step defs
 )
 public class TestRunner {
+	@AfterClass
+    public static void generateReport() {
+        ReportGenerator.generateReport();
+    }
 }

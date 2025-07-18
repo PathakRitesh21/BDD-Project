@@ -14,7 +14,7 @@ public class Hooks {
     @Before(order =0 )
     public void setUp() {
         // ✅ WebDriverManager handles the driver binary setup automatically
-        WebDriverManager.chromedriver().setup();
+        WebDriverManager.chromedriver().clearResolutionCache().setup();
         driver = new ChromeDriver();
         driver.manage().window().maximize();
         System.out.println("✅ Setup Completed Successfully");

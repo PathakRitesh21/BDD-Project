@@ -35,7 +35,14 @@
 		<dependency>
 			<groupId>io.github.bonigarcia</groupId>
 			<artifactId>webdrivermanager</artifactId>
-			<version>5.3.2</version>
+			<version>5.7.0</version>
+
+		</dependency>
+		<!-- Masterthought reporting dependency -->
+		<dependency>
+			<groupId>net.masterthought</groupId>
+			<artifactId>cucumber-reporting</artifactId>
+			<version>5.7.8</version>
 		</dependency>
 	</dependencies>
 </project>
