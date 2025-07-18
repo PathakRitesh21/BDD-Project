@@ -44,7 +44,7 @@ public class LoginGtplBank_Steps {
     public void i_enter_and(String string, String string2) {
     	gtplHomePage_Actions.enterUserID(string);
         gtplHomePage_Actions.enterPassword(string2);
-        gtplHomePage_Actions.clickLogin();
+        gtplHomePage_Actions.clickLogin();	
     }
 
 

@@ -44,5 +44,11 @@
 			<artifactId>cucumber-reporting</artifactId>
 			<version>5.7.8</version>
 		</dependency>
+		<!-- Apache POI -->
+		<dependency>
+			<groupId>org.apache.poi</groupId>
+			<artifactId>poi-ooxml</artifactId>
+			<version>5.2.3</version>
+		</dependency>
 	</dependencies>
 </project>
